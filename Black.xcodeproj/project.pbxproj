@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		89A60CAE28B287A800E3CE0C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89A60CAD28B287A800E3CE0C /* main.cpp */; };
+		89A60CB828B2AB2000E3CE0C /* Lexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89A60CB628B2AB2000E3CE0C /* Lexer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		89A60CAA28B287A800E3CE0C /* Black */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Black; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A60CAD28B287A800E3CE0C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		89A60CB628B2AB2000E3CE0C /* Lexer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lexer.cpp; sourceTree = "<group>"; };
+		89A60CB728B2AB2000E3CE0C /* Lexer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Lexer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				89A60CAD28B287A800E3CE0C /* main.cpp */,
+				89A60CB628B2AB2000E3CE0C /* Lexer.cpp */,
+				89A60CB728B2AB2000E3CE0C /* Lexer.hpp */,
 			);
 			path = Black;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A60CAE28B287A800E3CE0C /* main.cpp in Sources */,
+				89A60CB828B2AB2000E3CE0C /* Lexer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
