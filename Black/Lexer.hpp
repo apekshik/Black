@@ -24,15 +24,17 @@ enum TokenType {
 class Token {
 public:
     enum TokenType tType{WHITESPACE};
-    string tText;
+    string tString;
     size_t tStartOffset{0};
     size_t tEndOffset{0};
     size_t tLineNumber{0};
 };
 
-class Tokenizer {
+class Lexer {
 public:
-    vector<Token> parse(const string &sourceCode);
+    vector<Token> lex(const string&);
+private:
+    void endTokenAndAddToTokensList(Token&, vector<Token>&);
 };
 
 }
