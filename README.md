@@ -8,7 +8,7 @@ As a whole, the Black compiler is principally responsible for translating Black 
 
 - **Clang importer:** The Clang importer (implemented in lib/ClangImporter) will import Clang modules and map the C or Objective-C APIs they export into their corresponding Black APIs. The resulting imported ASTs can be referred to by semantic analysis.
 
-- **BIL generation:** The Black Intermediate Language (SIL) is a high-level, Black-specific intermediate language suitable for further analysis and optimization of Black code. The BIL generation phase (implemented in lib/BILGen) lowers the type-checked AST into so-called “raw” BIL. 
+- **BIL generation:** The Black Intermediate Language (BIL) is a high-level, Black-specific intermediate language suitable for further analysis and optimization of Black code. The BIL generation phase (implemented in lib/BILGen) lowers the type-checked AST into so-called “raw” BIL. 
 
 - **BIL guaranteed transformations:** The BIL guaranteed transformations (implemented in lib/BILOptimizer/Mandatory) perform additional dataflow diagnostics that affect the correctness of a program (such as a use of uninitialized variables). The end result of these transformations is “canonical” BIL.
 
